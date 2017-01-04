@@ -7,11 +7,12 @@
 <meta name="copyright" content="uxglow.com">
 <meta name="contact" content="widgets@uxglow.com">
 <meta name="author" content="UX Glow">
-<title>Contact Form 7 - Orange-Candy 1.0</title>
-<link rel="stylesheet" href="orange-candy.css" />
+<title>Contact Form 7 - Paper Plane 1.0</title>
+<link rel="stylesheet" href="paper-plane.css" />
 </head>
 
 <body>
+ 	<div class="wrapper">
 	<div role="form" class="wpcf7" id="wpcf7-f81-p82-o1" dir="ltr" lang="en-US">
 <div class="screen-reader-response" role="alert">One or more fields have an error. Please check and try again.<ul><li>The field is required.</li><li>The field is required.</li></ul></div>
 <form action="/tutorials/index.php/forms/#wpcf7-f81-p82-o1" method="post" class="wpcf7-form invalid" novalidate>
@@ -31,6 +32,11 @@
 <p><label> Message<br>
     <span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span> </label></p>
 <p><input value="Send" class="wpcf7-form-control wpcf7-submit" type="submit"><span class="ajax-loader"></span></p>
-<div class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors" style="display: block;" role="alert">One or more fields have an error. Please check and try again.</div></form></div>
+<div class="wpcf7-response-output wpcf7-display-none wpcf7-mail-sent-ok" style="display: block;" role="alert">One or more fields have an error. Please check and try again.</div>
+<div class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors" style="display: block;" role="alert">One or more fields have an error. Please check and try again.</div>
+<div class="wpcf7-response-output wpcf7-display-none wpcf7-spam-blocked" style="display: block;" role="alert">One or more fields have an error. Please check and try again.</div>
+<div class="wpcf7-response-output wpcf7-display-none wpcf7-mail-sent-ng" style="display: block;" role="alert">One or more fields have an error. Please check and try again.</div>
+</form></div>
+</div>
 </body>
 </html>
