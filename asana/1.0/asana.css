@@ -12,6 +12,9 @@ body {
   margin: auto;
   font-family: montserrat,arial,verdana;
 }
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
+}
 .wpcf7{
 	width:400px;	
 	font-family: 'Open Sans', sans-serif, Arial;

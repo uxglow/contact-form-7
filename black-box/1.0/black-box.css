@@ -12,6 +12,9 @@ body {
   margin: auto;
   font-family: 'Open Sans', sans-serif;
 }
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
+}
 .wpcf7{
 	width:450px;	
 	font-family: 'Open Sans', sans-serif, Arial;
@@ -24,7 +27,7 @@ body {
 .wpcf7 .wpcf7-form {
     float: left;
     padding: 40px 10%;
-    width: 80%;
+    width: 100%;
 }
 .wpcf7 h1 {
   font-size: 24px;
