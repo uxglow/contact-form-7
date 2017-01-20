@@ -7,6 +7,9 @@ Description: __desc__
 Version: 1.0
 Tags: Contact Form 7, Paper Plane
 */
+.wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
+	box-sizing: border-box  !important;	
+}
 body {
 	background-color: #dcdddf;
  	margin: auto;
