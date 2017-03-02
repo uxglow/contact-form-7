@@ -7,27 +7,22 @@ Description: __desc__
 Version: 1.0
 Tags: Contact Form 7, Asana
 */
-body {
-	background: rgba(0, 0, 0, 0) linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6)) repeat scroll 0 0;
-  margin: auto;
-  font-family: montserrat,arial,verdana;
-}
 .wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
-	width:400px;	
+	width:100%;	
 	font-family: 'Open Sans', sans-serif, Arial;
-  	margin: 5% auto;
+  	margin: 0 auto;
   	background-color: #fff;
   	overflow: hidden;
-	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
 	color: #666;
 }
 .wpcf7 .wpcf7-form {
     float: left;
-    padding: 40px 7%;
-    width: 86%;
+    padding: 7% 6%;
+    width: 100%;
 }
 .wpcf7 h1 {
   font-size: 24px;
@@ -52,7 +47,7 @@ body {
     display: block;
     float: left;
     font-size: 14px;
-    font-weight: bold;
+    font-weight:normal;
     margin: 0 0 10px;
     padding: 0;
     width: 100%
@@ -76,11 +71,13 @@ body {
 	border: 1px solid #ccc;
 	border-radius: 3px;
     box-sizing: border-box;
+	font-size: 14px;
+	line-height: 18px;
     float: left;
-    height: 42px;
+    height: 40px;
     margin: 0 0 6px;
     outline: medium none;
-    padding: 15px;
+    padding: 8px 15px;
     transition: all 0.3s ease-in-out 0s;
     width: 100%;
 	color: #2c3e50;

@@ -7,25 +7,20 @@ Description: __desc__
 Version: 1.0
 Tags: Contact Form 7, Dark Web
 */
-body {
-	background-color: #fff;
-  margin: auto;
-  font-family: 'Open Sans', sans-serif;
-}
 .wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
 	background:#111;
-	width:400px;	
+	width:100%;	
 	font-family: 'Open Sans', sans-serif, Arial;
-  	margin: 5% auto;
+  	margin: 0 auto;
   	overflow: hidden;
 	color: #ccc;
 }
 .wpcf7 .wpcf7-form {
     float: left;
-    padding: 40px 5%;
+    padding: 20px 5%;
     width: 100%;
 }
 .wpcf7 h1 {
@@ -51,7 +46,7 @@ body {
     display: block;
     float: left;
     font-size: 14px;
-    font-weight: bold;
+    font-weight:normal;
     margin: 0 0 10px;
     padding: 0;
     width: 100%
@@ -77,8 +72,10 @@ body {
 	border-radius: 4px;
     box-sizing: border-box;
     float: left;
+	font-size:14px;
+	line-height: 18px;
 	letter-spacing: 1px;
-    height: 42px;
+    height: 40px;
     margin: 0 0 6px;
     outline: medium none;
     padding: 8px 10px;
@@ -119,7 +116,7 @@ body {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 8px 10px;
     text-transform: uppercase;
 	transition: all 0.2s ease-in-out 0s;
 	font-family:Arial, Helvetica, sans-serif;

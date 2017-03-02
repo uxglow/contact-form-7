@@ -7,18 +7,13 @@ Description: __desc__
 Version: 1.0
 Tags: Contact Form 7, Magnet
 */
-body {
-	background-color: #555;
-  margin: auto;
-  font-family: 'Open Sans', sans-serif;
-}
 .wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
-	width:450px;	
+	width:100%;	
 	font-family: 'Open Sans', sans-serif, Arial;
-  	margin: 5% auto;
+  	margin: 0 auto;
   	background-color: #fff;
   	overflow: hidden;
 	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
@@ -32,13 +27,13 @@ body {
     content: "";
     display: block;
     width: 50px;
-	height: 50px;
+	height: 40px;
 	float:right;
 	z-index: 1;
 }
 .wpcf7 .wpcf7-form {
     float: left;
-    padding: 40px 10%;
+    padding: 7% 6%;
     width: 100%;
 }
 .wpcf7 h1 {
@@ -64,7 +59,7 @@ body {
     display: block;
     float: left;
     font-size: 14px;
-    font-weight: bold;
+    font-weight:normal;
     margin: 0 0 10px;
     padding: 0;
     width: 100%
@@ -88,7 +83,9 @@ body {
 	border: 1px solid #999;
     box-sizing: border-box;
     float: left;
-    height: 42px;
+    height: 40px;
+	font-size:14px;
+	line-height:18px;
     margin: 0 0 6px;
     outline: medium none;
     padding: 8px 10px;
@@ -150,7 +147,7 @@ body {
 	padding: 10px 2% 10px;
 	font-size:12px;
 	text-align:center;
-	width: 96%;
+	width: 100%;
 	float:left;
 }
 .wpcf7 .wpcf7-form .wpcf7-not-valid-tip{
