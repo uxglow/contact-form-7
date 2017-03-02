@@ -7,14 +7,6 @@ Description: __desc__
 Version: 1.0
 Tags: Contact Form 7, Orange Candy
 */
-body {
-  font-family: "Helvetica", Arial, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 30px;
-  color: #777;
-  background: #fff;
-}
 .wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
 	box-sizing: border-box  !important;	
 }
@@ -22,8 +14,8 @@ body {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:#fff;
 	background: #F29107;
-	width: 600px;
-	margin: 5% auto;
+	width: 100%;
+	margin: 0 auto;
 	overflow: hidden;
 	border-radius: 50px;
 	box-shadow: 3px 5px 10px #aaaaaa;
@@ -61,7 +53,9 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     border:1px solid #FFF;
-    padding: 15.5px;
+    padding: 6px 15px;
+	font-size:14px;
+	line-height: 18px;
     margin:0px;
     -webkit-transition: all 0.30s ease-in-out;
     -moz-transition: all 0.30s ease-in-out;
