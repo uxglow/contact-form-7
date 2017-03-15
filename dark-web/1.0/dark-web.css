@@ -52,6 +52,7 @@ Tags: Contact Form 7, Dark Web
 
 .wpcf7 .wpcf7-form label,
 .wpcf7 .wpcf7-form input[type=file]{
+    text-align:left;
     color: #aaa;
     display: block;
     float: left;

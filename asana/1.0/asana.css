@@ -53,6 +53,7 @@ Tags: Contact Form 7, Asana
 
 .wpcf7 .wpcf7-form label,
 .wpcf7 .wpcf7-form input[type=file]{
+    text-align:left;
     color: #666;
     display: block;
     float: left;
