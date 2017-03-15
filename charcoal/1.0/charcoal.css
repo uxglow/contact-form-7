@@ -13,13 +13,14 @@ Tags: Contact Form 7, Charcoal
 .wpcf7{
 	width:100%;	
 	font-family: 'Open Sans', sans-serif, Arial;
-  	margin: 0 auto;
+  	margin: 0px auto 30px auto;
   	background-color: #454f4f;
   	overflow: hidden;
 	box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
 	color: #fff;
 }
 .wpcf7 .wpcf7-form {
+    max-width: 600px;
     float: left;
     padding: 7% 6%;
     width: 100%;
@@ -35,14 +36,23 @@ Tags: Contact Form 7, Charcoal
   text-align:left;
 }
 
-.wpcf7 .wpcf7-form > p {
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
     padding: 0;
     margin: 10px 0 0 0;
 	width:100%;
 	float:left;
 }
 
-.wpcf7 .wpcf7-form label{
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
     color: #fff;
     display: block;
     float: left;
@@ -53,7 +63,8 @@ Tags: Contact Form 7, Charcoal
     width: 100%;
 	text-transform: uppercase;
 }
-.wpcf7 .wpcf7-form label > span {
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
 	float: left;
     margin-top: 4px;
     width: 100%;
@@ -69,6 +80,7 @@ Tags: Contact Form 7, Charcoal
 .wpcf7 .wpcf7-form input[type=tel],
 .wpcf7 .wpcf7-form textarea,
 .wpcf7 .wpcf7-form select{
+    display: block;
 	border:none;
 	box-sizing: border-box;
 	background-color: #394141;
@@ -106,6 +118,8 @@ Tags: Contact Form 7, Charcoal
 }
 .wpcf7 .wpcf7-form input[type=submit], 
 .wpcf7 .wpcf7-form input[type=button]{
+    display:block;
+    margin-top: 10px;
     background: #64a970 none repeat scroll 0 0;
     border: medium none;
     color: #fff;

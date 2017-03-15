@@ -13,7 +13,7 @@ Tags: Contact Form 7, Paper Plane
 .wpcf7{
 	width:100%;	
 	font-family: 'Arial', sans-serif, Open sans;
-  	margin: 0 auto;
+  	margin: 0px auto 30px auto;
   	overflow: hidden;
 	color: #333;
 	position: relative;
@@ -31,6 +31,7 @@ Tags: Contact Form 7, Paper Plane
 	z-index: 2;
 }
 .wpcf7 .wpcf7-form {
+    max-width: 600px;
     float: left;
     padding: 20px 6%;
     width: 100%;
@@ -48,14 +49,23 @@ Tags: Contact Form 7, Paper Plane
   text-align:left;
 }
 
-.wpcf7 .wpcf7-form > p {
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
     padding: 0;
     margin: 10px 0 0 0;
 	width:100%;
 	float:left;
 }
 
-.wpcf7 .wpcf7-form label{
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
     color: #666;
     display: block;
     float: left;
@@ -65,7 +75,8 @@ Tags: Contact Form 7, Paper Plane
     padding: 0;
     width: 100%
 }
-.wpcf7 .wpcf7-form label > span {
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
 	float: left;
     margin-top: 4px;
     width: 100%;
@@ -81,6 +92,7 @@ Tags: Contact Form 7, Paper Plane
 .wpcf7 .wpcf7-form input[type=tel],
 .wpcf7 .wpcf7-form textarea,
 .wpcf7 .wpcf7-form select{
+    display: block;
 	background-color:#eae7e7;
 	border: 1px solid #c8c8c8;
 	border-radius: 3px;
@@ -122,6 +134,8 @@ Tags: Contact Form 7, Paper Plane
 }
 .wpcf7 .wpcf7-form input[type=submit], 
 .wpcf7 .wpcf7-form input[type=button]{
+    display:block;
+    margin-top: 10px;
     background: #B1531F;
     border: medium none;
     color: #fff;

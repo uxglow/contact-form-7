@@ -13,11 +13,12 @@ Tags: Contact Form 7, Gum
 .wpcf7{
 	width:100%;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin: 0 auto;
+	margin: 0px auto 30px auto;
   	position: relative;
   	overflow: hidden;
 }
 .wpcf7 .wpcf7-form {
+    max-width: 600px;
 	background: #F9F9F9;
 	padding: 25px 25px 45px;
 	margin: 30px 0;
@@ -25,14 +26,23 @@ Tags: Contact Form 7, Gum
 	float:left;
 }
 
-.wpcf7 .wpcf7-form > p {
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
     padding: 0;
     margin: 10px 0 0 0;
 	width:100%;
 	float:left;
 }
 
-.wpcf7 .wpcf7-form label{
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
     color: #444;
     display: block;
     float: left;
@@ -53,6 +63,7 @@ Tags: Contact Form 7, Gum
 .wpcf7 .wpcf7-form input[type=tel],
 .wpcf7 .wpcf7-form textarea,
 .wpcf7 .wpcf7-form select{
+    display: block;
 	border: 1px solid #ccc;
     box-sizing: border-box;
     float: left;
@@ -92,6 +103,8 @@ Tags: Contact Form 7, Gum
 }
 .wpcf7 .wpcf7-form input[type=submit], 
 .wpcf7 .wpcf7-form input[type=button]{
+    display:block;
+    margin-top: 10px;
     background: #4caf50;
     border: medium none;
     box-shadow: 2px 2px 4px #acacac;

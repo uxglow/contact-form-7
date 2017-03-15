@@ -14,13 +14,14 @@ Tags: Contact Form 7, Berry
 .wpcf7{
 	width:100%;	
 	font-family: 'Helvetica' , Arial, sans-serif;
-  	margin: 0 auto;
+  	margin: 0px auto 30px auto;
   	background-color: #1E1E28;
   	overflow: hidden;
-	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 	color: #666;
 }
 .wpcf7 .wpcf7-form {
+    max-width: 600px;
     float: left;
     padding: 7% 6%;
     width: 100%;
@@ -36,14 +37,23 @@ Tags: Contact Form 7, Berry
   text-align:left;
 }
 
-.wpcf7 .wpcf7-form > p {
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
     padding: 0;
     margin: 10px 0 0 0;
 	width:100%;
 	float:left;
 }
 
-.wpcf7 .wpcf7-form label{
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
     color: #ccc;
     display: block;
     float: left;
@@ -53,7 +63,8 @@ Tags: Contact Form 7, Berry
     padding: 0;
     width: 100%
 }
-.wpcf7 .wpcf7-form label > span {
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
 	float: left;
     margin-top: 4px;
     width: 100%;
@@ -69,6 +80,7 @@ Tags: Contact Form 7, Berry
 .wpcf7 .wpcf7-form input[type=tel],
 .wpcf7 .wpcf7-form textarea,
 .wpcf7 .wpcf7-form select{
+    display: block;
 	background-color: #1E1E28;
 	border: 1px solid #cc6666;
 	border-radius: 5px;
@@ -110,6 +122,8 @@ Tags: Contact Form 7, Berry
 }
 .wpcf7 .wpcf7-form input[type=submit], 
 .wpcf7 .wpcf7-form input[type=button]{
+    display:block;
+    margin-top: 10px;
     background: #cc6666;
     border: 1px solid #cc6666;
 	border-radius: 5px;
