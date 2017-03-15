@@ -13,10 +13,10 @@ Tags: Contact Form 7, Magnet
 .wpcf7{
 	width:100%;	
 	font-family: 'Open Sans', sans-serif, Arial;
-  	margin: 0 auto;
+  	margin: 0px auto 30px auto;
   	background-color: #fff;
   	overflow: hidden;
-	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
 	color: #666;
 }
 .wpcf7 .wpcf7-form::before {
@@ -32,6 +32,7 @@ Tags: Contact Form 7, Magnet
 	z-index: 1;
 }
 .wpcf7 .wpcf7-form {
+    max-width: 600px;
     float: left;
     padding: 7% 6%;
     width: 100%;
@@ -47,14 +48,23 @@ Tags: Contact Form 7, Magnet
   text-align:left;
 }
 
-.wpcf7 .wpcf7-form > p {
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div:not(.wpcf7-response-output.wpcf7-display-none),
+.wpcf7 .wpcf7-form > span{
+	display:block;	
+}
+.wpcf7 .wpcf7-form > p,
+.wpcf7 .wpcf7-form > div,
+.wpcf7 .wpcf7-form > span{
+    float:left;
     padding: 0;
     margin: 10px 0 0 0;
 	width:100%;
 	float:left;
 }
 
-.wpcf7 .wpcf7-form label{
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file]{
     color: #666;
     display: block;
     float: left;
@@ -64,7 +74,8 @@ Tags: Contact Form 7, Magnet
     padding: 0;
     width: 100%
 }
-.wpcf7 .wpcf7-form label > span {
+.wpcf7 .wpcf7-form label,
+.wpcf7 .wpcf7-form input[type=file] > span {
 	float: left;
     margin-top: 4px;
     width: 100%;
@@ -80,6 +91,7 @@ Tags: Contact Form 7, Magnet
 .wpcf7 .wpcf7-form input[type=tel],
 .wpcf7 .wpcf7-form textarea,
 .wpcf7 .wpcf7-form select{
+    display: block;
 	border: 1px solid #999;
     box-sizing: border-box;
     float: left;
@@ -119,6 +131,8 @@ Tags: Contact Form 7, Magnet
 }
 .wpcf7 .wpcf7-form input[type=submit], 
 .wpcf7 .wpcf7-form input[type=button]{
+    display:block;
+    margin-top: 10px;
     background: #B1531F;
     border: medium none;
     color: #fff;
