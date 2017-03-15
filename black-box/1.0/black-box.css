@@ -53,6 +53,7 @@ Tags: Contact Form 7, Black Box
 
 .wpcf7 .wpcf7-form label,
 .wpcf7 .wpcf7-form input[type=file]{
+    text-align:left;
     color: #fff;
     display: block;
     float: left;
