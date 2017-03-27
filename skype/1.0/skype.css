@@ -11,6 +11,7 @@ Tags: Contact Form 7, Skype
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
+    max-width:600px;
 	width:100%;	
 	font-family: 'Helvetica' , Arial, sans-serif;
   	margin: 0px auto 30px auto;
@@ -20,7 +21,6 @@ Tags: Contact Form 7, Skype
 	color: #666;
 }
 .wpcf7 .wpcf7-form {
-    max-width: 600px;
     float: left;
     padding: 6%;
     width: 100%;
@@ -136,7 +136,9 @@ Tags: Contact Form 7, Skype
 	
 }
 .wpcf7 .wpcf7-form input[type=submit]:hover, 
-.wpcf7 .wpcf7-form input[type=button]:hover{
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
     background-color: #0773a6;
     border-color: #0773a6;
     box-shadow:0 0 0 2px white, 0 0 0 3px #0773a6;

@@ -12,6 +12,7 @@ Tags: Contact Form 7, Digital Ocean
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
+    max-width:600px;
 	border-radius: 5px;
 	width:100%;	
 	font-family: 'Open Sans', sans-serif, Arial;
@@ -22,7 +23,6 @@ Tags: Contact Form 7, Digital Ocean
 	color: #666;
 }
 .wpcf7 .wpcf7-form {
-    max-width: 600px;
     float: left;
     padding: 7% 6%;
     width: 100%;
@@ -139,7 +139,9 @@ Tags: Contact Form 7, Digital Ocean
     text-transform: uppercase;
 }
 .wpcf7 .wpcf7-form input[type=submit]:hover, 
-.wpcf7 .wpcf7-form input[type=button]:hover{
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
     background-color: #2980b9;
     color: #fff;
 	box-shadow: none;

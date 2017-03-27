@@ -11,6 +11,7 @@ Tags: Contact Form 7, Highway
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
+    max-width:600px;
 	width:540px;	
 	font-family: 'Open Sans', sans-serif, Arial;
 	border-radius: 5px;
@@ -33,7 +34,6 @@ Tags: Contact Form 7, Highway
 	z-index: 1;
 }
 .wpcf7 .wpcf7-form {
-    max-width: 600px;
     float: left;
     padding: 7% 6%;
     width: 100%;
@@ -148,7 +148,9 @@ Tags: Contact Form 7, Highway
 	font-size:20px;
 }
 .wpcf7 .wpcf7-form input[type=submit]:hover, 
-.wpcf7 .wpcf7-form input[type=button]:hover{
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
     background: #aaa;
     box-shadow:none;
     -moz-box-shadow:none;

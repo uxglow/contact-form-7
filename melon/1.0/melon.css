@@ -11,6 +11,7 @@ Tags: Contact Form 7, Melon
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
+    max-width:600px;
 	width:100%;	
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	border-radius: 5px;
@@ -19,7 +20,6 @@ Tags: Contact Form 7, Melon
   	overflow: hidden;
 }
 .wpcf7 .wpcf7-form {
-    max-width: 600px;
     float: left;
     padding: 20px 2% 30px;
     width: 100%;
@@ -135,7 +135,9 @@ Tags: Contact Form 7, Melon
 	font-size:20px;
 }
 .wpcf7 .wpcf7-form input[type=submit]:hover, 
-.wpcf7 .wpcf7-form input[type=button]:hover{
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
     background: #cf967f;
     box-shadow:none;
     -moz-box-shadow:none;

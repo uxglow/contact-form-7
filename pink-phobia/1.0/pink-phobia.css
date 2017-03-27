@@ -11,6 +11,7 @@ Tags: Contact Form 7, Pink Phobia
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
+    max-width:600px;
 	width:100%;	
 	font-family: 'Arial', sans-serif, Open sans;
   	margin: 0px auto 30px auto;
@@ -21,7 +22,6 @@ Tags: Contact Form 7, Pink Phobia
 	color: #fff;
 }
 .wpcf7 .wpcf7-form {
-    max-width: 600px;
     float: left;
     padding: 6%;
     width: 100%;
@@ -138,7 +138,9 @@ Tags: Contact Form 7, Pink Phobia
 	font-family:Arial, Helvetica, sans-serif;
 }
 .wpcf7 .wpcf7-form input[type=submit]:hover, 
-.wpcf7 .wpcf7-form input[type=button]:hover{
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
     background: #fff;
     box-shadow:none;
     -moz-box-shadow:none;
