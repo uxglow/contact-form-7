@@ -11,6 +11,7 @@ Tags: Contact Form 7, Black Box
 	box-sizing: border-box  !important;	
 }
 .wpcf7{
+    max-width:600px;
 	width:100%;	
 	font-family: 'Open Sans', sans-serif, Arial;
   	margin: 0px auto 30px auto;
@@ -20,7 +21,6 @@ Tags: Contact Form 7, Black Box
 	color: #666;
 }
 .wpcf7 .wpcf7-form {
-    max-width: 600px;
     float: left;
     padding: 7% 6%;
     width: 100%;
@@ -135,7 +135,9 @@ Tags: Contact Form 7, Black Box
     transition: all 0.5s ease 0s
 }
 .wpcf7 .wpcf7-form input[type=submit]:hover, 
-.wpcf7 .wpcf7-form input[type=button]:hover{
+.wpcf7 .wpcf7-form input[type=button]:hover,
+.wpcf7 .wpcf7-form input[type=submit]:focus, 
+.wpcf7 .wpcf7-form input[type=button]:focus{
     background: #179b77;
     box-shadow:none;
     -moz-box-shadow:none;
