@@ -1,34 +1,34 @@
 /*
-Form Name: Community
-Form URI: https://github.com/uxglow/contact-form-7/blob/master/community/1.0/community.css
+Form Name: Bulbul
+Form URI: https://github.com/uxglow/contact-form-7/blob/master/bulbul/1.0/bulbul.css
 Author: UX Glow
 Author URI: http://uxglow.com/
 Description: __desc__
 Version: 1.0
-Tags: Contact Form 7, Community
+Tags: Contact Form 7, Bulbul
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 .wpcf7 *, .wpcf7 *::after, .wpcf7 *::before  {
 	box-sizing: border-box  !important;	
 }
-.wpcf7{
+.wpcf7{ 
 	width:100%;	
 	font-family: 'Open Sans', sans-serif, Arial;
   	margin: 30px 0;
-  	background-color: #fefefe;
+  	background: rgba(0, 0, 0, 0) linear-gradient(45deg, #b3bead 0%, #dfe5d7 60%, #fcfff4 100%) repeat scroll 0 0;
   	overflow: hidden;
 	box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
-	color: #fff;
+	color: #6c7a89;
 }
 .wpcf7 .wpcf7-form {
-	background-color:#F55438;
+	background-color:transparent;
     float: left;
     padding: 6%;
     width: 100%;
 }
 .wpcf7 h1 {
 	font-size: 24px;
-	color: #fff;
+	color: #333;
 	color: rgb(255, 255, 255);
 	padding: 22px 25px;
 	border-radius: 5px 5px 0px 0px;
@@ -55,7 +55,7 @@ Tags: Contact Form 7, Community
 .wpcf7 .wpcf7-form label,
 .wpcf7 .wpcf7-form input[type=file]{
     text-align:left;
-    color: #666;
+    color: #6c7a89;
     display: block;
     float: left;
     font-size: 14px;
@@ -69,8 +69,13 @@ Tags: Contact Form 7, Community
 	float: left;
     margin-top: 4px;
     width: 100%;
-	color: #fff;
+	color: #6c7a89;
 }
+.wpcf7 .wpcf7-form ::-webkit-input-placeholder { color:#999; } /* chrome/webkit */
+.wpcf7 .wpcf7-form ::-moz-placeholder { color:#999; } /* firefox 19+ */
+.wpcf7 .wpcf7-form :-moz-placeholder { color:#999; } /* firefox 18- */
+.wpcf7 .wpcf7-form :-ms-input-placeholder { color:#999; } /* ie */
+
 .wpcf7 .wpcf7-form input[type=text],
 .wpcf7 .wpcf7-form input[type=date],
 .wpcf7 .wpcf7-form input[type=datetime],
@@ -90,13 +95,13 @@ Tags: Contact Form 7, Community
     height: 40px;
     margin: 6px 0;
     outline: medium none;
-    padding: 8px 10px;
+    padding: 8px 20px;
     transition: all 0.3s ease-in-out 0s;
     width: 100%;
-	background: #F55438 none repeat scroll 0 0;
-    border: 1px solid #ff7d66;
-    border-radius: 3px;
-    color: #fff;
+	background:rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #6c7a89;
+    border-radius:50px;
+    color: #6c7a89;
 }
 .wpcf7 .wpcf7-form input[type=text]:focus,
 .wpcf7 .wpcf7-form input[type=date]:focus,
@@ -109,8 +114,8 @@ Tags: Contact Form 7, Community
 .wpcf7 .wpcf7-form input[type=tel]:focus,
 .wpcf7 .wpcf7-form textarea:focus,
 .wpcf7 .wpcf7-form select:focus{
-	color: #fff;
-	border-color: #ff7d66;
+	color: #666;
+	border-color: #666;
 }
 .wpcf7 .wpcf7-form .field-divided{
     width: 49%;
@@ -121,20 +126,22 @@ Tags: Contact Form 7, Community
 }
 .wpcf7 .wpcf7-form .wpcf7-textarea{
     height: 100px;
+	border-radius:30px;
 }
 .wpcf7 .wpcf7-form input[type=submit], 
 .wpcf7 .wpcf7-form input[type=button]{
-    background: #F55438 none repeat scroll 0 0;
-    border: 1px solid #ff7d66;
-    border-radius: 3px;
+    background: #03c9a9;
+    border: 1px solid #03c9a9;
+    border-radius: 50px;
     color: #fff;
     cursor: pointer;
     display: block;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: normal;
     margin-top: 10px;
-    padding: 2% 6%;
-    text-transform: capitalize;
+    padding: 10px 40px;
+	letter-spacing: 1px;
+    text-transform: uppercase;
     transition: all 300ms ease-in 0s;
     width: auto;
 }
@@ -142,12 +149,10 @@ Tags: Contact Form 7, Community
 .wpcf7 .wpcf7-form input[type=button]:hover,
 .wpcf7 .wpcf7-form input[type=submit]:focus, 
 .wpcf7 .wpcf7-form input[type=button]:focus{
-    background: #e7462a;
-	border: 1px solid #ff7d66;
-    box-shadow:0px 0px 12px #ff7d66;
-    -moz-box-shadow:0px 0px 12px #ff7d66;
-    -webkit-box-shadow:0px 0px 12px #ff7d66;
+    background: #00ad8d;
+	border: 1px solid #00ad8d;
 	color: #fff;
+	transform: scale(1.2);
 }
 .wpcf7 .wpcf7-form .required{
     color:red;
